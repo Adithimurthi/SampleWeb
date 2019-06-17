@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		aws s3 sync . s3://121284source --exclude '.git'
+		sh 'aws s3 sync . s3://121284source --exclude '.git''
             }
         }
     }
