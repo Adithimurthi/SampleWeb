@@ -17,8 +17,8 @@ pipeline {
                 echo 'Deploying....'
 		sh '''
 		export AWS_DEFAULT_REGION=us-east-1 &&
-		export AWS_ACCESS_KEY_ID=AKIA5QFEMYR4ILYW22F3 &&
-		export AWS_SECRET_ACCESS_KEY=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 &&
+		export AWS_ACCESS_KEY_ID=AKIA5QFEMYR4NKA6U5XT &&
+		export AWS_SECRET_ACCESS_KEY=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 
 		aws s3 sync . s3://121284source --exclude './.git/'
 		'''
             }
